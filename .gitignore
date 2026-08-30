@@ -1,0 +1,5 @@
+node_modules/
+dist/
+papers/
+.worker-output-*.md
+*.log

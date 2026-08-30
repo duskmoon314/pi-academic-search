@@ -1,0 +1,52 @@
+{
+  "name": "@duskmoon/pi-academic-search",
+  "version": "0.1.0",
+  "description": "Academic paper search, lookup, citation analysis, and PDF download for Pi coding agent. Searches Semantic Scholar, OpenAlex, Crossref, arXiv, DBLP, and PubMed. Supports Unpaywall for open-access PDF discovery.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --experimental-strip-types --test",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "academic-search",
+    "semantic-scholar",
+    "openalex",
+    "crossref",
+    "arxiv",
+    "pubmed",
+    "dblp",
+    "unpaywall",
+    "pdf-download",
+    "academic-search"
+  ],
+  "license": "MIT",
+  "author": "duskmoon314 <kp.campbell.he@duskmoon314.com>",
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "dependencies": {
+    "typebox": "^1.3.22"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "typescript": "^7.0.2"
+  }
+}
